@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+#more {display: none;}
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #ffdf3b;
+    
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #ffdf3b;
+    color: white;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #9f1d2a;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: black;
+    
+}
+
+
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="header">
+  <h1>Maggotty News</h1>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#" style="float:right">Sign Out</a>
+</div>
+
+<div class="main">
+<h2>TRENDING NEWS</h2>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="1.jpg" alt="Jamaica day" style="width:100%">
+      <h3>Maggotty high school celebrates Jamaica Day </h3>
+      <p>Maggotty High School celebrated "Jamaica Day" and many competitions were heald and the winners were given prizes</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="2.jpg" alt="Interview" style="width:100%">
+      <h3>Interview with Leon Chislon
+</h3>
+      <p>Leon Chisholm interviews the Dynamic Sean Graham, Principal of Maggotty High School a young with a passion and drive for excellence.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="3.jpg" alt="ISSA Champion" style="width:100%">
+      <h3>Mile Gully High, Maggotty clash in D'Cup quarter-finals</h3>
+      <p>MANDEVILLE, Manchester — Mile Gully High and Maggotty High will meet today in their
+second ISSA/Wata daCosta Cup quarter-final...
+	  <a href="Third.html"> Read more</a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="4.jpg" alt="A student's friend" style="width:100%">
+      <h3>A Students friend</h3>
+      <p>Let’s believe in the children, says new principal of Maggotty High
+MAGGOTTY,St Elizabeth — New principal of Maggoty High School, Sean Graham, makes no 
+
+secret...<a href="Fourth.html"> Read more</a> 
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="5.jpg" alt="Bear" style="width:100%">
+  <h3>5 schools book second-round berths</h3>
+  <p>ANCHOVY, St James — Former champions Cornwall College and Garvey Maceo High were among five schools who booked second-round spots in the ISSA/Wata daCosta Cup football competition with wins in yesterday's first round return leg games played on a rain-affected day.
+
+In addition to advancing Cornwall College, Pt Antonio High and Garvey Maceo and St Elizabeth Technical High School (STETHS), who had advanced in the previous set of games, all won their respective zones, while Cedric Titus and Manchester High also booked spots in the next round.
+
+At least six games were not played due to heavy rains or waterlogged fields and are expected to be played next week.</p>
+
+</div>
+
+<!-- END MAIN -->
+</div>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</body>
+</html>
